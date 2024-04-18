@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6d626d; /* rosa claro */
+}
+
+header {
+    background-color: #3d363a; /* rosa claro */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px; /* Ajuste conforme necessário */
+    margin-top: 1px;
+}
+
+.content {
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* branco */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(235, 84, 162, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.image-left, .image-right {
+    flex: 1;
+}
+
+.image-left img, .image-right img {
+    max-width: 100%;
+}
+
+.container {
+    text-align: center;
+}
+
+input[name="nome"],
+input[name="tel"],
+input[name="senha"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #000000; /* rosa claro */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[name="botao"] {
+    background-color: #352f33; /* rosa escuro */
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    transition:  0.3s ease;
+    box-shadow: 0 4px 6px rgba(243, 115, 147, 0.1);
+}
+
+button[name="botao"]:hover {
+    background-color: #121011; /* rosa mais escuro */
+}
+
+footer {
+    background-color: #191819; /* rosa claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

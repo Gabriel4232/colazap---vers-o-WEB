@@ -1,0 +1,119 @@
+header {
+    background-color: #000000; /* rosa claro */
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.logo img {
+    width: 100px; /* Ajuste conforme necessário */
+    margin-top: 1px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a37; /* rosa claro inspirado na Hello Kitty */
+}
+
+
+
+
+.chat-container {
+    width: 800px;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #1e1e1e; /* cor da borda inspirada na Hello Kitty */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background-color: #272627; /* cor de fundo do cabeçalho inspirada na Hello Kitty */
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.message {
+    background-color: #ffffff; /* cor de fundo das mensagens inspirada na Hello Kitty */
+    padding: 8px 12px;
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+.message.sent {
+    background-color: #221f22; /* cor de fundo das mensagens enviadas inspirada na Hello Kitty */
+    color: #000;
+    align-self: flex-end;
+}
+
+.message-input {
+    display: flex;
+    margin-top: 400px;
+    margin-left: 5px;
+}
+
+.message-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #1c1719; /* cor da borda do campo de entrada inspirada na Hello Kitty */
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.message-input button {
+    padding: 8px 15px;
+    background-color: #232222; /* cor de fundo do botão de envio inspirada na Hello Kitty */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+
+.container{
+    display: flex;
+    margin: 50px auto;
+    padding: 20px;
+    align-items: center;
+
+}
+.image-left{
+    flex: 1;
+
+} 
+.image-right {
+    flex: 1;
+  
+  
+}
+
+.image-left img {
+    width: 150px;
+    margin-left: 100px;
+}
+
+.image-right img {
+    width: 150px;
+    margin-left: 100px;
+}
+
+
+
+
+
+footer {
+    background-color: #000000; /* rosa claro */
+    color: #ff0000;
+    text-align: center;
+    padding: 10px 0;
+}

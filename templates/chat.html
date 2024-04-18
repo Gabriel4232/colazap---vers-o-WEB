@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat cola </title>
+    <link rel="stylesheet" href="/static/chat.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+ 
+    </header> 
+<div class="container">
+
+        <div class="chat-container">
+
+            <div class="chat-header">
+                olá, chat
+            </div>
+
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here -->
+            </div>
+    
+            <div class="message-input">
+                <input type="text" id="message-input" placeholder="Type your message...">
+                <button onclick="">Enviar</button>
+            </div>
+
+            <script type="text/javascript"> 
+                function mostraUsuarios(){
+                    // requesição via ajax
+                    $.ajax({
+                        url: "/get/usuarios",
+                        type: "get",
+                        success: function(contatos){
+                            for (let index= 0,  index < contatos.length();  index++){
+                                let tag = '<option value= "'+ contatos[i]['telefone']+ '">'+contatos[i]['nome']+'</option>'
+                                $("usuario").append(tag)
+                            }
+                        }
+                    })
+                }
+
+                $document.ready()
+
+                $.ajax({
+                url: "/enviar/mensagem", 
+                type: "post",
+                contentType: "application/json", 
+                data: JSON.stringify(dados),
+                success: function (response) {
+                    alert("Mensagem enviada com sucesso!");
+                },
+                error: function (xhr, status, error) {
+                    alert("Erro ao enviar mensagem: " + error);
+                }
+            });
+            </script>
+        </div>
+
+  
+</div>
+    
+
+    <footer>
+        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
